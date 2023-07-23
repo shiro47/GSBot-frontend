@@ -46,7 +46,7 @@ const Login = () => {
     };
 
     fetchLoginUrl();
-  }, [loginUrl]);
+  }, [loginUrl, parameter, removeCookie, setCookie, setIsLoggedIn]);
 
   const handleLogin = async (event) => {
     event.preventDefault();

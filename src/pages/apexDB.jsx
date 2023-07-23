@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Container, InputGroup, FormControl, Button, Form, Modal, Alert, FormLabel} from 'react-bootstrap';
+import { Container, InputGroup, FormControl, Button, Form, Modal, FormLabel} from 'react-bootstrap';
 import ApexCard from '../components/apexCard';
 import { Search } from 'react-bootstrap-icons';
 import { useCookies } from 'react-cookie';
@@ -8,7 +8,6 @@ const ApexDB = () => {
   const [cookies] = useCookies(['discordServerId', 'discordToken']);
   const [searchTerm, setSearchTerm] = useState('');
   const [show, setShow] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
   const formRef = useRef(null);
 
   useEffect(() => {
