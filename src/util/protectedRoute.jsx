@@ -27,4 +27,4 @@ const ProtectedRoute = (props) => {
         </React.Fragment>
     );
 }
-export default ProtectedRoute;npm 
+export default ProtectedRoute;
