@@ -119,7 +119,7 @@ const Streamers = () => {
       </Modal>
 
       <Container fluid className='bg-transparent vh-100'>
-        <div className='search-container'>
+        <Container>
           <InputGroup className='mb-3'>
             <FormControl
               placeholder='Search streamers...'
@@ -135,7 +135,7 @@ const Streamers = () => {
               Add Streamer
             </Button>
           </InputGroup>
-        </div>
+        </Container>
         <Container className='card-container'>
           <div className='scrollable-card-group'>
               <StreamerCard searchTerm={searchTerm} />

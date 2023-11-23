@@ -27,7 +27,14 @@ const Header = () => {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="/">GSBot</Navbar.Brand>
+      <Navbar.Brand href="/">
+                    <img
+                        src='/gsLogo.png'
+                        alt='logo'
+                        width="30"
+                        height="30"
+                        className="d-inline-block align-top me-2 rounded-circle"
+                    />GSBot</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">

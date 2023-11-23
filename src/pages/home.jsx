@@ -3,9 +3,9 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 
 
 const HomePage = () => {
-    return (
-        <div className="home-page vh-100">
-      <Container className="h-100 d-flex justify-content-center align-items-center">
+  return (
+    <div className="home-page vh-100">
+      <Container className="text-white h-100 d-flex justify-content-center align-items-center">
         <Row>
           <Col>
             <h1 className="text-center">Welcome to GSBot</h1>
@@ -25,7 +25,7 @@ const HomePage = () => {
         </Row>
       </Container>
     </div>
-    
-    )
-  }
-  export default HomePage;
+
+  )
+}
+export default HomePage;

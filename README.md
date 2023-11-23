@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# Discord Bot 2.0 - Frontend 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This documentation provides an overview of the frontend of the Apex Legends Discord Bot project. The frontend is built using React and Bootstrap, allowing users to log in via Discord and manage the Apex players database and streamers database.
 
-## Available Scripts
+[Backend](https://github.com/shiro47/GSBot-2.0)
 
-In the project directory, you can run:
+## Tech Stack
 
-### `npm start`
+- React
+- Bootstrap
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To run the frontend locally, follow these steps:
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone https://github.com/shiro47/GSBot-frontend.git
+   ```
+2. Navigate to the frontend directory:
 
-### `npm run build`
+  ```bash
+cd GSBot-frontend
+  ```
+3. Install dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  ```bash
+npm install
+  ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. Start the development server:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm start
+  ```
+This will start the development server, and you can view the application at http://localhost:3000 in your web browser.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Features
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Discord Login
+- Users can log in to the frontend using their Discord accounts.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Apex Players Database Management
+- View a list of registered Apex Legends players.
+- Add new players to the database with validation.
+- Remove players from the database.
+### Streamers Database Management
+- View a list of registered Twitch streamers.
+- Add new streamers to the database with validation.
+- Remove streamers from the database.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Authentication Flow
+1. Users click the "Login with Discord" button.
 
-## Learn More
+2. They are redirected to the Discord OAuth2 authorization page.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. After authorization, users are redirected back to the frontend with an access token.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. The frontend uses this access token to make authenticated requests to the backend.
 
-### Code Splitting
+## Screenshots
+- Home Page
+![Home](screenshots/gsbot-home.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Login
+![Login](screenshots/gsbot-login.png)
 
-### Analyzing the Bundle Size
+- Servers list
+![Servers](screenshots/gsbot-servers.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Streamers database
+![Streamers database](screenshots/gsbot-streamers.png)
 
-### Making a Progressive Web App
+- Add streamer
+![Add streamer](screenshots/gsbot-addstreamer.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Players database
+![Players database](screenshots/gsbot-players.png)
 
-### Advanced Configuration
+- Add player
+![Add player](screenshots/gsbot-addplayer.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Notes 
+- The live demo might have restricted features compared to running the bot locally with your own Discord application credentials.

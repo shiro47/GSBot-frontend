@@ -80,7 +80,7 @@ const ApexDB = () => {
         </Modal>
 
         <Container fluid className="bg-transparent vh-100">
-          <div className="search-container">
+          <Container>
             <InputGroup className="mb-3">
               <FormControl
                 placeholder="Search players..."
@@ -94,7 +94,7 @@ const ApexDB = () => {
               </InputGroup.Text>
               <Button variant='info' style={{ marginLeft: "10px" }} onClick={handleShow}>Add Player</Button>
             </InputGroup>
-          </div>
+          </Container>
           <Container className="card-container">
             <div className="scrollable-card-group">
                 <ApexCard searchTerm={searchTerm} />
