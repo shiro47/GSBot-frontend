@@ -84,3 +84,4 @@ This will start the development server, and you can view the application at http
 
 ## Notes 
 - The live demo might have restricted features compared to running the bot locally with your own Discord application credentials.
+- This is my first React.js project.
